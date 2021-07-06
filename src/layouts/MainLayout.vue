@@ -1,21 +1,17 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <q-header elevated class="bg-primary text-white">
+    <q-header elevated dark>
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
+        <q-btn dense flat round icon="menu" @click="left = !left" />
 
         <q-toolbar-title>
-          <!-- <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-          </q-avatar> -->
-          
-          Rebuild 3
+        Jonathan Sloan
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+    <q-drawer show-if-above v-model="left" side="left" bordered>
       <!-- drawer content -->
     </q-drawer>
 
@@ -27,17 +23,10 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-
 export default {
-  setup () {
-    const leftDrawerOpen = ref(false)
-
+  data () {
     return {
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
+      left: false
     }
   }
 }
