@@ -10,7 +10,7 @@
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
           </q-avatar> -->
           
-          Rebuild 1
+          Rebuild 3
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
