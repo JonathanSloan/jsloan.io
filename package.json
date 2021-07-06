@@ -7,7 +7,7 @@
   "homepage": "https://jonathansloan.github.io/jsloan.io",
   "private": true,
   "scripts": {
-    "deploy": "quasar build && gh-pages -d dist/spa",
+    "deploy": "gh-pages -d dist/spa",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
