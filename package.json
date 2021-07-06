@@ -4,7 +4,7 @@
   "description": "A Quasar Framework app",
   "productName": "Quasar App",
   "author": "Sloan <jonathanssloan@protonmail.com>",
-  "homepage": "https://jonathansloan.github.io",
+  "homepage": "https://jonathansloan.github.io/jsloan.io",
   "private": true,
   "scripts": {
     "deploy": "quasar build && gh-pages -d dist/spa",
